@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug App",
+            "request": "launch",
+            "mainClass": "georgekalo.App",
+            "projectName": "data_struct"
+        },
+        {
+            "type": "java",
+            "name": "Debug RandomScenarioApp",
+            "request": "launch",
+            "mainClass": "georgekalo.RandomScenarioApp",
+            "projectName": "data_struct"
+        }
+    ]
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="georgekalo.LRUCacheTest" time="0.13" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="C:\Users\georgekalo\Desktop\ΣΧΟΛΗ\ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ\LRU_Cache_Project_Team_93\data_struct\target\test-classes;C:\Users\georgekalo\Desktop\ΣΧΟΛΗ\ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ\LRU_Cache_Project_Team_93\data_struct\target\classes;C:\Users\georgekalo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\georgekalo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Bucharest"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
+    <property name="sun.java.command" value="C:\Users\georgekalo\AppData\Local\Temp\surefire4739968062472520958\surefirebooter-20250106175849627_3.jar C:\Users\georgekalo\AppData\Local\Temp\surefire4739968062472520958 2025-01-06T17-58-49_465-jvmRun1 surefire-20250106175849627_1tmp surefire_0-20250106175849627_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\georgekalo\Desktop\ΣΧΟΛΗ\ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ\LRU_Cache_Project_Team_93\data_struct\target\test-classes;C:\Users\georgekalo\Desktop\ΣΧΟΛΗ\ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ\LRU_Cache_Project_Team_93\data_struct\target\classes;C:\Users\georgekalo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\georgekalo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\georgekalo"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-20"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\georgekalo\Desktop\ΣΧΟΛΗ\ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ\LRU_Cache_Project_Team_93\data_struct"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\georgekalo\AppData\Local\Temp\surefire4739968062472520958\surefirebooter-20250106175849627_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20.0.1+9-29"/>
+    <property name="user.name" value="georgekalo"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\georgekalo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\GEORGE~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="C:\Users\georgekalo\Desktop\ΣΧΟΛΗ\ΔΟΜΕΣ ΔΕΔΟΜΕΝΩΝ\LRU_Cache_Project_Team_93\data_struct"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Java\jdk-20\bin;C:\Program Files\PuTTY\;C:\Users\georgekalo\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Program Files\Git\cmd;C:\Users\georgekalo\AppData\Local\Microsoft\WindowsApps;C:\Users\georgekalo\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20.0.1+9-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="testBasicFunctionality" classname="georgekalo.LRUCacheTest" time="0.037">
+    <system-out><![CDATA[Adding key: 1 with value: A
+Key 1 added to cache.
+Cache state: [1=A] 
+Adding key: 2 with value: B
+Key 2 added to cache.
+Cache state: [1=A] [2=B] 
+Adding key: 3 with value: C
+Key 3 added to cache.
+Cache state: [1=A] [2=B] [3=C] 
+Cache state after adding 1, 2, 3:
+Cache state: [1=A] [2=B] [3=C] 
+Cache hit for key: 1
+Key 1 moved to tail for LRU.
+Cache state: [2=B] [3=C] [1=A] 
+Cache state after accessing key 1:
+Cache state: [2=B] [3=C] [1=A] 
+Adding key: 4 with value: D
+Evicted key (LRU): 2
+Key 4 added to cache.
+Cache state: [3=C] [1=A] [4=D] 
+Cache state after adding key 4:
+Cache state: [3=C] [1=A] [4=D] 
+Cache miss for key: 2
+Cache hit for key: 4
+Key 4 moved to tail for LRU.
+Cache state: [3=C] [1=A] [4=D] 
+Cache state after accessing key 4:
+Cache state: [3=C] [1=A] [4=D] 
+]]></system-out>
+  </testcase>
+  <testcase name="testStressTest" classname="georgekalo.LRUCacheTest" time="0.02">
+    <system-out><![CDATA[Adding key: 1 with value: 1
+Key 1 added to cache.
+Cache state: [1=1] 
+Adding key: 2 with value: 2
+Key 2 added to cache.
+Cache state: [1=1] [2=2] 
+Adding key: 3 with value: 3
+Key 3 added to cache.
+Cache state: [1=1] [2=2] [3=3] 
+Adding key: 4 with value: 4
+Key 4 added to cache.
+Cache state: [1=1] [2=2] [3=3] [4=4] 
+Adding key: 5 with value: 5
+Key 5 added to cache.
+Cache state: [1=1] [2=2] [3=3] [4=4] [5=5] 
+Adding key: 6 with value: 6
+Evicted key (LRU): 1
+Key 6 added to cache.
+Cache state: [2=2] [3=3] [4=4] [5=5] [6=6] 
+Cache state after adding key 6:
+Cache state: [2=2] [3=3] [4=4] [5=5] [6=6] 
+Adding key: 7 with value: 7
+Evicted key (LRU): 2
+Key 7 added to cache.
+Cache state: [3=3] [4=4] [5=5] [6=6] [7=7] 
+Cache state after adding key 7:
+Cache state: [3=3] [4=4] [5=5] [6=6] [7=7] 
+Adding key: 8 with value: 8
+Evicted key (LRU): 3
+Key 8 added to cache.
+Cache state: [4=4] [5=5] [6=6] [7=7] [8=8] 
+Cache state after adding key 8:
+Cache state: [4=4] [5=5] [6=6] [7=7] [8=8] 
+Adding key: 9 with value: 9
+Evicted key (LRU): 4
+Key 9 added to cache.
+Cache state: [5=5] [6=6] [7=7] [8=8] [9=9] 
+Cache state after adding key 9:
+Cache state: [5=5] [6=6] [7=7] [8=8] [9=9] 
+Adding key: 10 with value: 10
+Evicted key (LRU): 5
+Key 10 added to cache.
+Cache state: [6=6] [7=7] [8=8] [9=9] [10=10] 
+Cache state after adding key 10:
+Cache state: [6=6] [7=7] [8=8] [9=9] [10=10] 
+Cache miss for key: 1
+Cache miss for key: 2
+Cache miss for key: 3
+Cache miss for key: 4
+Cache miss for key: 5
+Cache hit for key: 6
+Key 6 moved to tail for LRU.
+Cache state: [7=7] [8=8] [9=9] [10=10] [6=6] 
+Cache hit for key: 7
+Key 7 moved to tail for LRU.
+Cache state: [8=8] [9=9] [10=10] [6=6] [7=7] 
+Cache hit for key: 8
+Key 8 moved to tail for LRU.
+Cache state: [9=9] [10=10] [6=6] [7=7] [8=8] 
+Cache hit for key: 9
+Key 9 moved to tail for LRU.
+Cache state: [10=10] [6=6] [7=7] [8=8] [9=9] 
+Cache hit for key: 10
+Key 10 moved to tail for LRU.
+Cache state: [6=6] [7=7] [8=8] [9=9] [10=10] 
+]]></system-out>
+  </testcase>
+  <testcase name="testEdgeCases" classname="georgekalo.LRUCacheTest" time="0.006">
+    <system-out><![CDATA[Adding key: 1 with value: A
+Key 1 added to cache.
+Cache state: [1=A] 
+Cache state after adding key 1:
+Cache state: [1=A] 
+Cache hit for key: 1
+Key 1 moved to tail for LRU.
+Cache state: [1=A] 
+Adding key: 2 with value: B
+Key 2 added to cache.
+Cache state: [1=A] [2=B] 
+Cache state after adding key 2:
+Cache state: [1=A] [2=B] 
+Adding key: 3 with value: C
+Evicted key (LRU): 1
+Key 3 added to cache.
+Cache state: [2=B] [3=C] 
+Cache state after adding key 3:
+Cache state: [2=B] [3=C] 
+Cache miss for key: 1
+Cache hit for key: 2
+Key 2 moved to tail for LRU.
+Cache state: [3=C] [2=B] 
+Cache hit for key: 3
+Key 3 moved to tail for LRU.
+Cache state: [2=B] [3=C] 
+]]></system-out>
+  </testcase>
+</testsuite>
