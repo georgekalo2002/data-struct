@@ -2,7 +2,7 @@ package georgekalo;
 
 import java.util.HashMap;
 
-public class LRUCache<K, V> {
+public class LRUCache<K, V> implements Cache<K, V> {
     private final int capacity;
     private final CacheReplacementPolicy policy;
     private final HashMap<K, Node<K, V>> map;
@@ -21,48 +21,42 @@ public class LRUCache<K, V> {
     public V get(K key) {
         if (!map.containsKey(key)) {
             missCount++;
-            System.out.println("Cache miss for key: " + key);
             return null;
         }
         hitCount++;
-        System.out.println("Cache hit for key: " + key);
         Node<K, V> node = map.get(key);
         if (policy == CacheReplacementPolicy.LRU) {
-            list.moveToTail(node);
-            System.out.println("Key " + key + " moved to tail for LRU.");
+            list.moveToTail(node); // Μετακινεί το στοιχείο στο τέλος μόνο για LRU
+           
         }
-        printCache();
+        // Στη MRU, η θέση παραμένει αμετάβλητη
         return node.value;
     }
 
     public void put(K key, V value) {
-        System.out.println("Adding key: " + key + " with value: " + value);
-
         if (map.containsKey(key)) {
             Node<K, V> node = map.get(key);
             node.value = value;
             if (policy == CacheReplacementPolicy.LRU) {
-                list.moveToTail(node);
-                System.out.println("Key " + key + " moved to tail for LRU.");
+                list.moveToTail(node); // Μετακινεί το στοιχείο στο τέλος για LRU
+                
             }
         } else {
             if (map.size() == capacity) {
                 Node<K, V> removed;
                 if (policy == CacheReplacementPolicy.LRU) {
-                    removed = list.removeHead(); // Αφαιρεί το λιγότερο πρόσφατο
-                    System.out.println("Evicted key (LRU): " + removed.key);
+                    removed = list.removeHead(); // Αφαιρεί το λιγότερο πρόσφατο για LRU
                 } else {
-                    removed = list.removeTail(); // Αφαιρεί το πιο πρόσφατο
-                    System.out.println("Evicted key (MRU): " + removed.key);
+                    removed = list.removeTail(); // Αφαιρεί το πιο πρόσφατο για MRU
+                    
                 }
+
                 map.remove(removed.key);
             }
             Node<K, V> newNode = new Node<>(key, value);
-            list.addToTail(newNode);
+            list.addToTail(newNode); // Προσθέτει το νέο στοιχείο στο τέλος
             map.put(key, newNode);
-            System.out.println("Key " + key + " added to cache.");
         }
-        printCache();
     }
 
     public int getHitCount() {

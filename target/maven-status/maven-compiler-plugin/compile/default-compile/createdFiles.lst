@@ -1,7 +1,11 @@
 georgekalo\App.class
+georgekalo\CacheFactory$1.class
+georgekalo\LFUCache.class
 georgekalo\LRUCache.class
 georgekalo\CacheReplacementPolicy.class
 georgekalo\RandomScenarioApp.class
 georgekalo\LRUCache$Node.class
 georgekalo\LRUCache$DoublyLinkedList.class
 georgekalo\Cache.class
+georgekalo\CacheFactory.class
+georgekalo\LFUCache$Node.class
